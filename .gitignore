@@ -1,0 +1,10 @@
+test*
+.env
+venv/
+env/
+*.db
+
+__pycache__/
+*.pyo
+*.pyd
+*.pyc
