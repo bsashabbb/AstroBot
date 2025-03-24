@@ -1,0 +1,7 @@
+.venv
+build
+dist
+token
+telegram*
+for-ai.py
+AstroBot.egg-info
