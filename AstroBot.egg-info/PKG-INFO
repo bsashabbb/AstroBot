@@ -1,0 +1,52 @@
+Metadata-Version: 2.2
+Name: AstroBot
+Version: 0.1.3
+Summary: Асинхронная библиотека для разработки Telegram ботов
+Home-page: https://github.com/bsashabbb/AstroBot
+Author: bsashabbb
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.23.0
+Requires-Dist: python-dotenv>=0.21.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AstroBot
+
+Асинхронная библиотека для разработки Telegram ботов.
+
+## Установка
+
+~~~bash
+pip install AstroBot
+~~~
+
+## Пример использования
+
+~~~python
+from astrobot import AstroBot
+
+class MyBot(AstroBot):
+    async def handle_start(self, update):
+        if update.message and update.message.text == "/start":
+            await self.send_message(update.message.chat.id, "Привет!")
+~~~
+
+## Лицензия
+
+MIT
